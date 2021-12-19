@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( to left, #8942a8, #ba382f);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family:'Times New Roman';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .05s ease;   
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+/* Home Page Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../PORTFOLIO/sb-blog-programming.jpeg');
+    background-position: center;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    position: absolute;
+
+}
+.headings{
+    font-family: 'Times New Roman';
+    font-size: 3rem;
+    text-align: center;
+    margin: 35px 159px;
+}
+.btn{
+    padding: 24px 105px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+/* About me section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background: linear-gradient( to left, #8942a8, #ba382f);
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+    margin-left: -535px;
+    margin-top: 159px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 141px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/*Portfolio Section */
+#portfolio{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing:border-box;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.gallery img{
+    width: 20%;
+    height: 20%;
+    margin: 3%;
+    margin-right: auto;
+}
+
+/*services Section*/
+#services{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( to left, #8942a8, #ba382f);
+    padding: 20px;
+}
+.row{
+    display: flex;
+}
+.box{
+   display: flex;
+   flex-direction: column;
+   width: 327px;
+   height: 450px;
+   border: 1px solid black;
+   margin: 10px;
+   align-items: center;
+   text-align: justify;
+   padding: 10px;
+   border-radius: 15px;
+   background: linear-gradient(to top,rgb(255,45,45) 50%, white 50%);
+   background-size: 100% 200%;
+   transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,45,45);
+}
+/* conatct Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0, 0.9);
+    color: white;
+    padding: 20px;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 50px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#Send{
+    padding: 30px;
+    width: 100%;
+    margin: 40px;
+    border:none;
+    outline:none;
+}
+#send:hover{
+    cursor:pointer;
+    box-shadow: 0 0 40px white;
+}
